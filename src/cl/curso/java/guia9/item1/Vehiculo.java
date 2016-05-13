@@ -5,6 +5,7 @@ package cl.curso.java.guia9.item1;
 
 /**
  * @author Joseph Perez Carmona
+ * ESTO ES UNA PRUEBA
  *
  */
 public class Vehiculo {
