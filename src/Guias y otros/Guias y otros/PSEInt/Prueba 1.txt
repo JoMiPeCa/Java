@@ -1,0 +1,79 @@
+import Leer;
+
+2.- 
+
+private int beca=0,promedio=0,edad=0;
+
+do{
+	System.out.println("Ingrese su edad: ");
+	edad = Leer.datoInt();
+	}while(edad<0);
+
+do{
+	System.out.println("Ingrese su Promedio: ");
+	promedio = Leer.datoInt();
+	}while(promedio<10 && promedio>70);
+
+if(edad>18) {
+	if(promedio>=65) {
+		beca= 2000000;
+		System.out.println("Felicidades! Tu beca es de: "+beca);
+	} else if (promedio>=60 && promedio<65){
+		beca = 1000000;
+		System.out.println("Felicidades! Tu beca es de: "+beca);
+	} else if (promedio>=55 && promedio<60){
+		beca = 500000;
+		System.out.println("Felicidades! Tu beca es de: "+beca);
+	} else {
+		System.out.println("Debes estudiar mas el proximo ciclo para acceder a becas!!!");
+	}	
+} else{
+	if(promedio>=65) {
+		beca= 300000;
+		System.out.println("Felicidades! Tu beca es de: "+beca);
+	} else if (promedio>=60 && promedio<65){
+		beca = 200000;
+		System.out.println("Felicidades! Tu beca es de: "+beca);
+	} else if (promedio>=55 && promedio<60){
+		beca = 100000;
+		System.out.println("Felicidades! Tu beca es de: "+beca);
+	} else {
+		System.out.println("Debes estudiar mas el proximo ciclo para acceder a becas!!!");
+	}	
+}
+
+4.-
+
+private int num=0,tope=0,suma=0;
+aux=0,aux2=1,cont=0
+
+do{
+	System.out.println("Ingrese tope: ");
+	tope = Leer.datoInt();
+	}while(tope>1);
+
+Repetir{ 0, 1, 1, 2, 3, 5, 8, 13
+	cont=cont+1;
+	aux=aux+aux2;
+	suma = suma + aux;	
+}Hasta que (cont==tope);
+
+suma<-0;
+	cont<-0;
+	a<-0;
+	i<-1;
+	c<-0;
+	Mientras cont<tope Hacer
+		Escribir "",i;
+		c = a + i;
+		a <- i;
+		i <- c;
+		cont = cont +1;
+	FinMientras
+	
+	suma = suma +i;
+
+
+
+
+

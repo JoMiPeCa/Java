@@ -1,0 +1,48 @@
+Escribir el que permita ingresa el numero de partidos ganados, perdidos y empatados por algun equipo de futbol en el torneo de apertura, 
+se debe mostrar su puntaje total, teniendo en cuenta que por cada partido ganado obtendra 3 puntos, empatado 1 punto y perdido 0 puntos
+
+1. Inicio 
+2. ganados = 0, empatados = 0, perdidos = 0, total = 0, win = 3, tablas = 1, lost = 0, cont = 0
+3. Pedir ganados
+	pedir empatados
+	pedir perdidos
+4. Calcular
+	total = (ganados*win)+(empatados*tablas)+(perdidos*lost)
+	cont = ganados+perdidos+empatados
+  Mostrar "Puntaje Total: "+total+" de un total de "+cont+" partidos"
+5. Fin
+
+
+Ecribir el algoritmo para resolver el siguiente problema: Un Hombre, un lobo, una cabra, y un repollo deben pasar un rio, para ello se dispone
+de una barca con capacidad para dos ocupantes, el hombre(unico que sabe remar) y otro. Si en una orilla se quedan solos el lobo y la cabra
+el lobo se come a la cabra, Si en una orilla se quedan solo la cabra y el repollo, la cabra se come el repollo.
+
+(paso la cabra, regreso, cojo el repollo, lo paso, regreso con la cabra, paso al lobo, regreso solo, paso a la cabra y fin)
+
+1. Inicio
+2. Defino Hombre, Barca, A, B, Cabra, Lobo, Repollo, AB
+3. Hombre en Barca
+AB = transportar a B
+Mientras A no este vacio Hacer
+	Hombre{
+	coger cabra
+	AB
+	volver a A solo
+	coger repollo
+	AB
+	coger cabra
+	volver a A
+	dejar Cabra
+coger Lobo
+AB
+dejar lobo
+volver a A
+coger cabra
+AB
+
+
+4. Fin
+
+
+
+
