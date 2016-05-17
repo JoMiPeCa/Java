@@ -1,12 +1,12 @@
 package cl.curso.java.guia9.item2.ejercicio3;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Asignatura {
 
 	private String nombreAsignatura;
 	private String nombreProfesor;
-	private List<Alumno> alumno;
+	private ArrayList<Alumno> alumno;
 	/**
 	 * @return the nombreAsignatura
 	 */
@@ -34,13 +34,13 @@ public class Asignatura {
 	/**
 	 * @return the alumno
 	 */
-	public List<Alumno> getAlumno() {
+	public ArrayList<Alumno> getAlumno() {
 		return alumno;
 	}
 	/**
 	 * @param alumno the alumno to set
 	 */
-	public void setAlumno(List<Alumno> alumno) {
+	public void setAlumno(ArrayList<Alumno> alumno) {
 		this.alumno = alumno;
 	}
 	/**
@@ -48,7 +48,7 @@ public class Asignatura {
 	 * @param nombreProfesor
 	 * @param alumno
 	 */
-	public Asignatura(String nombreAsignatura, String nombreProfesor, List<Alumno> alumno) {
+	public Asignatura(String nombreAsignatura, String nombreProfesor, ArrayList<Alumno> alumno) {
 		super();
 		this.nombreAsignatura = nombreAsignatura;
 		this.nombreProfesor = nombreProfesor;
@@ -57,6 +57,6 @@ public class Asignatura {
 	
 	public String imprimir(){
 		return "nombreAsignatura = " + nombreAsignatura 
-				+ " \n alumno = "+ alumno.toString();
+				+ alumno.toString();
 	}
 }

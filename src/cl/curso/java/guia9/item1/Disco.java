@@ -110,16 +110,18 @@ public class Disco {
 	}
 
 	public String cancion() {
+		String retorno = "";
 		if (canciones != null) {
-			String retorno = "";
 			for (int i = 0; i < canciones.length; i++) {
-				retorno = i + ". " + canciones[i];
-				return retorno;
+				retorno += (i+1) + ". " + canciones[i]+" ";
+				
 			}
-		} else {
-			return "";
+		}else{
+			return "No hay canciones";
 		}
-		return "";
+		return retorno;
+
 	}
+	
 
 }

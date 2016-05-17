@@ -3,7 +3,7 @@
  */
 package cl.curso.java.guia9.item2.ejercicio4;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /**
  * @author Joseph Perez Carmona
@@ -13,7 +13,7 @@ public class Tienda {
 
 	private String nombre;
 	private String tipoTienda;
-	private List<Producto> producto;
+	private ArrayList<Producto> producto;
 	/**
 	 * @return the nombre
 	 */
@@ -41,13 +41,13 @@ public class Tienda {
 	/**
 	 * @return the producto
 	 */
-	public List<Producto> getProducto() {
+	public ArrayList<Producto> getProducto() {
 		return producto;
 	}
 	/**
 	 * @param producto the producto to set
 	 */
-	public void setProducto(List<Producto> producto) {
+	public void setProducto(ArrayList<Producto> producto) {
 		this.producto = producto;
 	}
 	/**
@@ -55,7 +55,7 @@ public class Tienda {
 	 * @param tipoTienda
 	 * @param producto
 	 */
-	public Tienda(String nombre, String tipoTienda, List<Producto> producto) {
+	public Tienda(String nombre, String tipoTienda, ArrayList<Producto> producto) {
 		super();
 		this.nombre = nombre;
 		this.tipoTienda = tipoTienda;
@@ -63,8 +63,8 @@ public class Tienda {
 	}
 	
 	public String imprimir() {
-		return "nombre Tienda = " + nombre + 
-				"\n producto = " + producto.toString();
+		return "nombre Tienda = " + nombre + " " +
+				producto.toString();
 	}
 	
 	

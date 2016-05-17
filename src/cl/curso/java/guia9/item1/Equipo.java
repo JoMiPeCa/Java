@@ -115,20 +115,20 @@ public class Equipo {
 	}
 	
 	public void ganar(){
-		this.puntosTotales = this.puntosTotales+3;
-		this.cantPartGanados = this.cantPartGanados+1;
-		this.partidosJugados = this.partidosJugados+1;
+		this.puntosTotales +=3;
+		this.cantPartGanados +=1;
+		this.partidosJugados +=1;
 	}
 	
 	public void perder(){
-		this.partidosJugados=this.partidosJugados+1;
-		this.cantPartPerdidos = this.cantPartPerdidos+1;
+		this.partidosJugados+=1;
+		this.cantPartPerdidos += 1;
 	}
 	
 	public void empatar(){
-		this.partidosJugados = this.partidosJugados+1;
-		this.cantPartEmpatados = this.cantPartEmpatados+1;
-		this.puntosTotales = this.puntosTotales+1;
+		this.partidosJugados += 1;
+		this.cantPartEmpatados += 1;
+		this.puntosTotales += 1;
 	}
 	
 }
