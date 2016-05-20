@@ -1,8 +1,7 @@
-package cl.curso.java.ejemplos;
+package cl.curso.java.ejercicios.temporizador;
 
 import javax.swing.JOptionPane;
 
-import cl.curso.java.guia09.item2.ejercicio4.Tienda;
 
 public class Programa {
 
@@ -25,8 +24,7 @@ public class Programa {
 		public static void main(String[] args) {
 
 			boolean opcionSalir = false;
-			//EjemploHilo thread = new EjemploHilo();
-			Thread thread = new Thread(new EjemploHilo2());
+			Temporizador thread = new Temporizador();
 			
 			String opc;
 
@@ -36,9 +34,9 @@ public class Programa {
 				switch (opc) {
 
 				case "1":
-					//thread.run();
-					thread.start();
-					System.out.println("metodo main; el nombre del thread es: "+Thread.currentThread().getName());
+					thread.run();
+					//thread.start();
+					System.out.println("BOOM !!!");
 					//JOptionPane.showMessageDialog(null, "BRUTO "+datos.sBruto());
 					//JOptionPane.showMessageDialog(null, "LIQUIDO "+datos.sLiquido());
 					
