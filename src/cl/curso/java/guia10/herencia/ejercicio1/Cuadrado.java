@@ -13,6 +13,7 @@ public class Cuadrado extends FiguraGeometrica {
 	
 	/**
 	 * Constructor por DEFECTO inicializado
+	 * 
 	 */
 	public Cuadrado() {
 		this.lado=0;
