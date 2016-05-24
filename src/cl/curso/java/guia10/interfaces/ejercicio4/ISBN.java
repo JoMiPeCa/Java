@@ -1,17 +1,66 @@
 package cl.curso.java.guia10.interfaces.ejercicio4;
 
-public class ISBN {
+public class ISBN implements Validable {
 
+	private int numero;
+	private String digitoVerificador;
 	
 	
 	
-	
-	public boolean verificar(String original){
+	/**
+	 * @param numero
+	 * @param digitoVerificador
+	 */
+	public ISBN(int numero, String digitoVerificador) {
+		super();
+		this.numero = numero;
+		this.digitoVerificador = digitoVerificador;
+	}
+
+
+
+	/**
+	 * @return the numero
+	 */
+	public int getNumero() {
+		return numero;
+	}
+
+
+
+	/**
+	 * @param numero the numero to set
+	 */
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+
+
+	/**
+	 * @return the digitoVerificador
+	 */
+	public String getDigitoVerificador() {
+		return digitoVerificador;
+	}
+
+
+
+	/**
+	 * @param digitoVerificador the digitoVerificador to set
+	 */
+	public void setDigitoVerificador(String digitoVerificador) {
+		this.digitoVerificador = digitoVerificador;
+	}
+
+
+	@Override
+	public boolean validar(){
 		int total = 0, aux = 0, aux2 = 0, aux3 = 0;
-		char aux1 = ' ';
+		String aux1 = "";
 		int codigo = 0;
 		String aux0 = "";
-		aux1 = original.toUpperCase().charAt(10);
+		aux1 = this.digitoVerificador;
 		try{
 			aux0 = String.valueOf(aux1);
 			aux = Integer.parseInt(aux0);
