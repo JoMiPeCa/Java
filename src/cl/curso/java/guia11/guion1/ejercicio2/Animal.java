@@ -1,12 +1,7 @@
-/**
- * Programa tu futuro - Fundación Emplea
- * Universidad de Chile 
- * Curso de Programación en java
- */
-package cl.curso.java.guia.carrera;
+package cl.curso.java.guia11.guion1.ejercicio2;
 
 /**
- * @author Juan Maldonado León
+ * @author Joseph Perez Carmona
  *
  */
 public class Animal implements Runnable {

@@ -1,5 +1,9 @@
-package cl.curso.java.guia.carrera;
+package cl.curso.java.guia11.guion1.ejercicio2;
 
+/**
+ * @author Joseph Perez Carmona
+ *
+ */
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
