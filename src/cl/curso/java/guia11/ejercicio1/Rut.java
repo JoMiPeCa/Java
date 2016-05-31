@@ -2,37 +2,37 @@ package cl.curso.java.guia11.ejercicio1;
 
 public class Rut{
 
-	private String numero;
+	private String rut;
 	private char digitoVerificador;
 	
 	/**
 	 * 
 	 */
 	public Rut() {
-		this.numero= "19188374-8";
+		this.rut= "17700879-6";
 	}
 	
 	/**
 	 * @param numero
 	 * @param digitoVerificador
 	 */
-	public Rut(String numero, char digitoVerificador) {
-		this.numero = numero;
+	public Rut(String rut, char digitoVerificador) {
+		this.rut = numero;
 		this.digitoVerificador = digitoVerificador;
 	}
 
 	/**
-	 * @return the numero
+	 * @return retorna el Rut
 	 */
-	public String getNumero() {
-		return numero;
+	public String getRut() {
+		return rut;
 	}
 
 	/**
-	 * @param numero the numero to set
+	 * @param setea el Rut
 	 */
-	public void setNumero(String numero) {
-		this.numero = numero;
+	public void setRut(String rut) {
+		this.rut = rut;
 	}
 
 	/**

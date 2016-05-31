@@ -1,4 +1,4 @@
-package cl.curso.java.guia11.ejercicio2;
+package cl.curso.java.guia11.ejercicio24;
 
 public class AutenticacionExcepcion extends Exception {
 

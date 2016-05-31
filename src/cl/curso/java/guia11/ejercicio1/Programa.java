@@ -8,7 +8,7 @@ public class Programa {
 		
 		try
 		{
-			System.out.println(rut.validar("18938884-5"));
+			System.out.println(rut.validar("9479854-k"));
 		}
 		catch(RutNoValidoExcepcion e)
 		{

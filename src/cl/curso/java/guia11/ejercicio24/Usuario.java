@@ -1,11 +1,11 @@
-package cl.curso.java.guia11.ejercicio2;
+package cl.curso.java.guia11.ejercicio24;
 
 import javax.swing.JOptionPane;
 
 
 public class Usuario {
 
-	private String nombre;
+	private String username;
 	private String password;
 	private int intentosFallidos;
 	
@@ -14,52 +14,52 @@ public class Usuario {
 	 * 
 	 */
 	public Usuario() {
-		this.nombre = " ";
+		this.username = " ";
 		this.password = " ";
 		this.intentosFallidos = 0;
 	}
 	/**
-	 * @param nombre
+	 * @param username
 	 * @param password
 	 * @param intentosFallidos
 	 */
 	public Usuario(String nombre, String password, int intentosFallidos) {
-		this.nombre = nombre;
+		this.username = nombre;
 		this.password = password;
 		this.intentosFallidos = intentosFallidos;
 	}
 	/**
-	 * @return the nombre
+	 * @return devuelve el Username
 	 */
-	public String getNombre() {
-		return nombre;
+	public String getUsername() {
+		return username;
 	}
 	/**
-	 * @param nombre the nombre to set
+	 * @param Setea el Username
 	 */
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setUsername(String user) {
+		this.username = user;
 	}
 	/**
-	 * @return the password
+	 * @return devuelve el password
 	 */
 	public String getPassword() {
 		return password;
 	}
 	/**
-	 * @param password the password to set
+	 * @param Setea el password
 	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
 	/**
-	 * @return the intentosFallidos
+	 * @return Devuelve los intentos Fallidos
 	 */
 	public int getIntentosFallidos() {
 		return intentosFallidos;
 	}
 	/**
-	 * @param intentosFallidos the intentosFallidos to set
+	 * @param Setea los intentos fallidos
 	 */
 	public void setIntentosFallidos(int intentosFallidos) {
 		this.intentosFallidos = intentosFallidos;
@@ -75,7 +75,7 @@ public class Usuario {
 			{
 				throw new CuentaBloquedaException("Cuenta Bloqueda.");
 			}
-			if(this.getNombre().equals(usuario) && this.getPassword().equals(pass))
+			if(this.getUsername().equals(usuario) && this.getPassword().equals(pass))
 			{
 				
 				JOptionPane.showMessageDialog(null, "Haz ingresado al sistema.");
