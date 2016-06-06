@@ -4,8 +4,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import cl.curso.java.banco.CuentaBancaria;
-
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
@@ -76,12 +74,12 @@ public class MDI extends JFrame {
 
 				String passw = new String(txtPassword.getPassword());
 
-				user.setNombre(txtUsuario.getText());
+				user.setUsername(txtUsuario.getText());
 				user.setPassword(passw);
 				
 				
 				try {
-					user.login(user.getNombre(), user.getPassword());
+					user.login(user.getUsername(), user.getPassword());
 				} catch ( AutenticacionExcepcion e) {
 					JOptionPane.showMessageDialog(null, "Error", e.getMessage(), JOptionPane.ERROR_MESSAGE);
 				} catch (CuentaBloquedaException e) {

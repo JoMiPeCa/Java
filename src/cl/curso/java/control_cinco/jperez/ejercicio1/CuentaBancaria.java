@@ -68,7 +68,7 @@ public class CuentaBancaria {
 	}
 	
 	public void ordenarTransaccionesPorFecha(){
-		Collections.sort(this.getTransacciones());
+		//Collections.sort(this.getTransacciones());
 	}
 	
 	public void ordenarTransaccionesPorTipo(){

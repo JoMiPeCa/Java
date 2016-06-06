@@ -13,8 +13,7 @@ public class Animal implements Runnable {
 	private static boolean carreraFinalizada;
 
 	
-	
-	
+
 	/**
 	 * @param nombre
 	 * @param velocidad
@@ -27,6 +26,21 @@ public class Animal implements Runnable {
 		this.velocidad = velocidad;
 		this.descanso = descanso;
 		this.posicion = posicion;
+	}
+	
+	/**
+	 * @param nombre
+	 * @param velocidad
+	 * @param descanso
+	 * @param posicion
+	 */
+	public Animal(String nombre, int velocidad, long descanso, int posicion, boolean lala) {
+		super();
+		this.nombre = nombre;
+		this.velocidad = velocidad;
+		this.descanso = descanso;
+		this.posicion = posicion;
+		this.carreraFinalizada = lala;
 	}
 
 	/**

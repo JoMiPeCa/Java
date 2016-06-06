@@ -1,4 +1,4 @@
-package cl.curso.java.guia11.Threads.ejercicio2;
+package cl.curso.java.guia11.guion1.ejercicio2;
 
 import java.awt.EventQueue;
 
