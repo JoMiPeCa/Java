@@ -17,7 +17,7 @@ public class Rut{
 	 * @param digitoVerificador
 	 */
 	public Rut(String rut, char digitoVerificador) {
-		this.rut = numero;
+		this.rut = rut;
 		this.digitoVerificador = digitoVerificador;
 	}
 
