@@ -5,9 +5,6 @@ package cl.curso.java.control_cuatro.jperez.ejercicio5;
 
 import javax.swing.JOptionPane;
 
-import cl.curso.java.guia10.herencia.ejercicio1.Circulo;
-import cl.curso.java.guia10.herencia.ejercicio1.Cuadrado;
-import cl.curso.java.guia10.herencia.ejercicio1.Triangulo;
 
 /**
  * @author Joseph Perez Carmona

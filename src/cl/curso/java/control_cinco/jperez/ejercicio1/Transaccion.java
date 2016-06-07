@@ -5,8 +5,6 @@ package cl.curso.java.control_cinco.jperez.ejercicio1;
 
 import java.util.Date;
 
-import cl.curso.java.guia12.ejercicio1.Producto;
-
 /**
  * @author Joseph Perez Carmona
  *

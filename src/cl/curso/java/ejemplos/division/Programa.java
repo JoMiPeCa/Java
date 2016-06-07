@@ -5,8 +5,6 @@ package cl.curso.java.ejemplos.division;
 
 import javax.swing.JOptionPane;
 
-import cl.curso.java.guia09.item2.ejercicio4.Tienda;
-
 /**
  * @author Joseph Perez Carmona
  *
