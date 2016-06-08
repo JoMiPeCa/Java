@@ -54,6 +54,7 @@ public class ISBN implements Validable {
 	}
 
 
+	@SuppressWarnings("static-access")
 	@Override
 	public boolean validar(){
 		int total = 0, aux = 0, aux2 = 0, aux3 = 0;
@@ -67,6 +68,8 @@ public class ISBN implements Validable {
 		} catch (Exception e){
 
 		}
+		String original = "";
+		original.valueOf(numero);
 		codigo= Integer.parseInt(original,9);
 
 		for (int i = 2; i < 12; i++) {
@@ -84,11 +87,7 @@ public class ISBN implements Validable {
 			}
 
 		} else if (aux2 == 1) {
-			if ('X' == aux1) {
-				return true;
-			} else {
-				return false;
-			}
+			return "X".compareToIgnoreCase(aux1)==0;
 
 		} else {
 			aux3 = 11 - aux2;

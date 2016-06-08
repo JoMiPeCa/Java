@@ -4,15 +4,25 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Date;
 
+import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+
+import com.github.sarxos.webcam.Webcam;
+import com.github.sarxos.webcam.WebcamResolution;
+
+import cl.curso.java.ejemplos.DB.servicios.WebcamService;
 
 public class LoginGUI extends JFrame {
 
@@ -53,10 +63,11 @@ public class LoginGUI extends JFrame {
 		contentPane.add(nombreUsuario);
 		nombreUsuario.setColumns(10);
 		
-		password = new JTextField();
+		password = new JPasswordField();
 		password.setColumns(10);
 		password.setBounds(131, 224, 188, 26);
 		contentPane.add(password);
+		
 		
 		JLabel lblUsuario = new JLabel("Nombre de usuario");
 		lblUsuario.setFont(new Font("Lucida Grande", Font.BOLD, 13));
@@ -87,9 +98,11 @@ public class LoginGUI extends JFrame {
 				Usuario usuario = new Usuario();
 				usuario.setUsuario(nombreUsuario.getText());
 				usuario.setPassword( password.getText() );
+				WebcamService wc = new WebcamService();
 				
 				try {
 					usuario.login();
+					
 					JOptionPane.showMessageDialog(null,"Acceso Correcto", "Info",
 							JOptionPane.INFORMATION_MESSAGE);
 				} catch (AutenticacionException e1) {
@@ -98,6 +111,12 @@ public class LoginGUI extends JFrame {
 							JOptionPane.ERROR_MESSAGE);
 					nombreUsuario.setText( "" );
 					password.setText("");
+					try {
+						wc.webcamCapture();
+					} catch (IOException e2) {
+						// TODO Auto-generated catch block
+						e2.printStackTrace();
+					}
 				} catch (CuentaBloqueadaException e1) {
 
 					JOptionPane.showMessageDialog(null,

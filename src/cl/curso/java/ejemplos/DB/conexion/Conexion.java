@@ -27,7 +27,7 @@ public class Conexion {
 			try{
 				Class.forName("com.mysql.jdbc.Driver");
 				Connection conn = DriverManager.getConnection(
-						"jdbc:mysql://192.168.0.108:3306/curso", 
+						"jdbc:mysql://192.168.0.128:3306/curso", 
 						"alumnos",
 						"java123");
 				
