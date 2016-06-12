@@ -11,7 +11,7 @@ public class Empleado extends Persona{
 
 	private int salario;
 	private Departamento departamento;
-	private Persona persona;
+
 	
 	/**
 	 * Constructor que recibe parametros
@@ -19,20 +19,36 @@ public class Empleado extends Persona{
 	 * @param departamento
 	 * @param persona
 	 */
-	public Empleado(int salario, Departamento departamento, Persona persona) {
+	public Empleado(int salario, Departamento departamento) {
 		this.salario = salario;
 		this.departamento = departamento;
-		this.persona = persona;
 	}
 	
 	
+	
+	
+	/**
+	 * Constructor que recibe parametros
+	 * @param rut
+	 * @param nombre
+	 * @param apellido
+	 * @param edad
+	 */
+	public Empleado(int salario, Departamento departamento, String rut, String nombre, String apellido, int edad) {
+		super(rut, nombre, apellido, edad);
+		this.salario = salario;
+		this.departamento = departamento;
+	}
+
+
+
+
 	/**
 	 * Constructor que Inicializa parametros
 	 */
 	public Empleado() {
 		this.salario = 0;
 		this.departamento = null;
-		this.persona = null;
 	}
 
 
@@ -65,32 +81,13 @@ public class Empleado extends Persona{
 		this.departamento = departamento;
 	}
 
-
-	/**
-	 * Retorna el parametro persona (Accesador)
-	 * @return persona
-	 */
-	public Persona getPersona() {
-		return persona;
-	}
-
-
-	/**
-	 * Mutador persona
-	 * @param Modifica el persona y lo reemplaza con persona
-	 */
-	public void setPersona(Persona persona) {
-		this.persona = persona;
-	}
-
-
 	/* 
 	 * Compara los ruts de los empleados
 	 */
 	@Override
 	public boolean equals(Object obj) {
 		Persona p = (Persona) obj;
-		return this.getPersona().getRut().equalsIgnoreCase(p.getRut());
+		return this.getRut().equalsIgnoreCase(p.getRut());
 	}
 	
 }

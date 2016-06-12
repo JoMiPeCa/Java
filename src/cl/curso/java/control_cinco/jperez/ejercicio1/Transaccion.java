@@ -12,7 +12,7 @@ import java.util.Date;
 public class Transaccion {
 
 	private String id;
-	private String tipo;
+	private TipoTransaccion tipo;
 	private Date fecha;
 	private int monto;
 	
@@ -24,7 +24,7 @@ public class Transaccion {
 	 * @param fecha
 	 * @param monto
 	 */
-	public Transaccion(String id, String tipo, Date fecha, int monto) {
+	public Transaccion(String id, TipoTransaccion tipo, Date fecha, int monto) {
 		this.id = id;
 		this.tipo = tipo;
 		this.fecha = fecha;
@@ -35,7 +35,7 @@ public class Transaccion {
 	 */
 	public Transaccion() {
 		this.id = "";
-		this.tipo = "";
+		this.tipo = TipoTransaccion.NA;
 		this.fecha = new Date();
 		this.monto = 0;
 	}
@@ -57,14 +57,14 @@ public class Transaccion {
 	 * Retorna el parametro tipo (Accesador)
 	 * @return tipo
 	 */
-	public String getTipo() {
+	public TipoTransaccion getTipo() {
 		return tipo;
 	}
 	/**
 	 * Mutador tipo
 	 * @param Modifica el tipo y lo reemplaza con tipo
 	 */
-	public void setTipo(String tipo) {
+	public void setTipo(TipoTransaccion tipo) {
 		this.tipo = tipo;
 	}
 	/**
